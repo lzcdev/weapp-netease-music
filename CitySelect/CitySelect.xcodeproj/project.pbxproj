@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2020F4FF1DED62FB00AB0768 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020F4FE1DED62FB00AB0768 /* main.m */; };
+		2020F5021DED62FB00AB0768 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020F5011DED62FB00AB0768 /* AppDelegate.m */; };
+		2020F5051DED62FB00AB0768 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020F5041DED62FB00AB0768 /* ViewController.m */; };
+		2020F5081DED62FB00AB0768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2020F5061DED62FB00AB0768 /* Main.storyboard */; };
+		2020F50A1DED62FB00AB0768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2020F5091DED62FB00AB0768 /* Assets.xcassets */; };
+		2020F50D1DED62FB00AB0768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2020F50B1DED62FB00AB0768 /* LaunchScreen.storyboard */; };
+		2020F5181DED62FB00AB0768 /* CitySelectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020F5171DED62FB00AB0768 /* CitySelectTests.m */; };
+		2020F5231DED62FB00AB0768 /* CitySelectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020F5221DED62FB00AB0768 /* CitySelectUITests.m */; };
+		2020F5361DED632500AB0768 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2020F5311DED632500AB0768 /* cities.plist */; };
+		2020F5371DED632500AB0768 /* CityPickerProvince.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020F5331DED632500AB0768 /* CityPickerProvince.m */; };
+		2020F5381DED632500AB0768 /* CitySelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020F5351DED632500AB0768 /* CitySelectView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2020F5141DED62FB00AB0768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2020F4F21DED62FB00AB0768 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2020F4F91DED62FB00AB0768;
+			remoteInfo = CitySelect;
+		};
+		2020F51F1DED62FB00AB0768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2020F4F21DED62FB00AB0768 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2020F4F91DED62FB00AB0768;
+			remoteInfo = CitySelect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2020F4FA1DED62FB00AB0768 /* CitySelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitySelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2020F4FE1DED62FB00AB0768 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2020F5001DED62FB00AB0768 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2020F5011DED62FB00AB0768 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2020F5031DED62FB00AB0768 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2020F5041DED62FB00AB0768 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2020F5071DED62FB00AB0768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2020F5091DED62FB00AB0768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2020F50C1DED62FB00AB0768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2020F50E1DED62FB00AB0768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2020F5131DED62FB00AB0768 /* CitySelectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitySelectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2020F5171DED62FB00AB0768 /* CitySelectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectTests.m; sourceTree = "<group>"; };
+		2020F5191DED62FB00AB0768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2020F51E1DED62FB00AB0768 /* CitySelectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitySelectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2020F5221DED62FB00AB0768 /* CitySelectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectUITests.m; sourceTree = "<group>"; };
+		2020F5241DED62FB00AB0768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2020F5311DED632500AB0768 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		2020F5321DED632500AB0768 /* CityPickerProvince.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityPickerProvince.h; sourceTree = "<group>"; };
+		2020F5331DED632500AB0768 /* CityPickerProvince.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityPickerProvince.m; sourceTree = "<group>"; };
+		2020F5341DED632500AB0768 /* CitySelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySelectView.h; sourceTree = "<group>"; };
+		2020F5351DED632500AB0768 /* CitySelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySelectView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2020F4F71DED62FB00AB0768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2020F5101DED62FB00AB0768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2020F51B1DED62FB00AB0768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2020F4F11DED62FB00AB0768 = {
+			isa = PBXGroup;
+			children = (
+				2020F5301DED632500AB0768 /* CitySelectView */,
+				2020F4FC1DED62FB00AB0768 /* CitySelect */,
+				2020F5161DED62FB00AB0768 /* CitySelectTests */,
+				2020F5211DED62FB00AB0768 /* CitySelectUITests */,
+				2020F4FB1DED62FB00AB0768 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2020F4FB1DED62FB00AB0768 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2020F4FA1DED62FB00AB0768 /* CitySelect.app */,
+				2020F5131DED62FB00AB0768 /* CitySelectTests.xctest */,
+				2020F51E1DED62FB00AB0768 /* CitySelectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2020F4FC1DED62FB00AB0768 /* CitySelect */ = {
+			isa = PBXGroup;
+			children = (
+				2020F5001DED62FB00AB0768 /* AppDelegate.h */,
+				2020F5011DED62FB00AB0768 /* AppDelegate.m */,
+				2020F5031DED62FB00AB0768 /* ViewController.h */,
+				2020F5041DED62FB00AB0768 /* ViewController.m */,
+				2020F5061DED62FB00AB0768 /* Main.storyboard */,
+				2020F5091DED62FB00AB0768 /* Assets.xcassets */,
+				2020F50B1DED62FB00AB0768 /* LaunchScreen.storyboard */,
+				2020F50E1DED62FB00AB0768 /* Info.plist */,
+				2020F4FD1DED62FB00AB0768 /* Supporting Files */,
+			);
+			path = CitySelect;
+			sourceTree = "<group>";
+		};
+		2020F4FD1DED62FB00AB0768 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2020F4FE1DED62FB00AB0768 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2020F5161DED62FB00AB0768 /* CitySelectTests */ = {
+			isa = PBXGroup;
+			children = (
+				2020F5171DED62FB00AB0768 /* CitySelectTests.m */,
+				2020F5191DED62FB00AB0768 /* Info.plist */,
+			);
+			path = CitySelectTests;
+			sourceTree = "<group>";
+		};
+		2020F5211DED62FB00AB0768 /* CitySelectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2020F5221DED62FB00AB0768 /* CitySelectUITests.m */,
+				2020F5241DED62FB00AB0768 /* Info.plist */,
+			);
+			path = CitySelectUITests;
+			sourceTree = "<group>";
+		};
+		2020F5301DED632500AB0768 /* CitySelectView */ = {
+			isa = PBXGroup;
+			children = (
+				2020F5311DED632500AB0768 /* cities.plist */,
+				2020F5321DED632500AB0768 /* CityPickerProvince.h */,
+				2020F5331DED632500AB0768 /* CityPickerProvince.m */,
+				2020F5341DED632500AB0768 /* CitySelectView.h */,
+				2020F5351DED632500AB0768 /* CitySelectView.m */,
+			);
+			name = CitySelectView;
+			path = CitySelect/CitySelectView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2020F4F91DED62FB00AB0768 /* CitySelect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2020F5271DED62FB00AB0768 /* Build configuration list for PBXNativeTarget "CitySelect" */;
+			buildPhases = (
+				2020F4F61DED62FB00AB0768 /* Sources */,
+				2020F4F71DED62FB00AB0768 /* Frameworks */,
+				2020F4F81DED62FB00AB0768 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CitySelect;
+			productName = CitySelect;
+			productReference = 2020F4FA1DED62FB00AB0768 /* CitySelect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2020F5121DED62FB00AB0768 /* CitySelectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2020F52A1DED62FB00AB0768 /* Build configuration list for PBXNativeTarget "CitySelectTests" */;
+			buildPhases = (
+				2020F50F1DED62FB00AB0768 /* Sources */,
+				2020F5101DED62FB00AB0768 /* Frameworks */,
+				2020F5111DED62FB00AB0768 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2020F5151DED62FB00AB0768 /* PBXTargetDependency */,
+			);
+			name = CitySelectTests;
+			productName = CitySelectTests;
+			productReference = 2020F5131DED62FB00AB0768 /* CitySelectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2020F51D1DED62FB00AB0768 /* CitySelectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2020F52D1DED62FB00AB0768 /* Build configuration list for PBXNativeTarget "CitySelectUITests" */;
+			buildPhases = (
+				2020F51A1DED62FB00AB0768 /* Sources */,
+				2020F51B1DED62FB00AB0768 /* Frameworks */,
+				2020F51C1DED62FB00AB0768 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2020F5201DED62FB00AB0768 /* PBXTargetDependency */,
+			);
+			name = CitySelectUITests;
+			productName = CitySelectUITests;
+			productReference = 2020F51E1DED62FB00AB0768 /* CitySelectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2020F4F21DED62FB00AB0768 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = LuzhiChao;
+				TargetAttributes = {
+					2020F4F91DED62FB00AB0768 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					2020F5121DED62FB00AB0768 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2020F4F91DED62FB00AB0768;
+					};
+					2020F51D1DED62FB00AB0768 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2020F4F91DED62FB00AB0768;
+					};
+				};
+			};
+			buildConfigurationList = 2020F4F51DED62FB00AB0768 /* Build configuration list for PBXProject "CitySelect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2020F4F11DED62FB00AB0768;
+			productRefGroup = 2020F4FB1DED62FB00AB0768 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2020F4F91DED62FB00AB0768 /* CitySelect */,
+				2020F5121DED62FB00AB0768 /* CitySelectTests */,
+				2020F51D1DED62FB00AB0768 /* CitySelectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2020F4F81DED62FB00AB0768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2020F50D1DED62FB00AB0768 /* LaunchScreen.storyboard in Resources */,
+				2020F50A1DED62FB00AB0768 /* Assets.xcassets in Resources */,
+				2020F5081DED62FB00AB0768 /* Main.storyboard in Resources */,
+				2020F5361DED632500AB0768 /* cities.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2020F5111DED62FB00AB0768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2020F51C1DED62FB00AB0768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2020F4F61DED62FB00AB0768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2020F5381DED632500AB0768 /* CitySelectView.m in Sources */,
+				2020F5371DED632500AB0768 /* CityPickerProvince.m in Sources */,
+				2020F5051DED62FB00AB0768 /* ViewController.m in Sources */,
+				2020F5021DED62FB00AB0768 /* AppDelegate.m in Sources */,
+				2020F4FF1DED62FB00AB0768 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2020F50F1DED62FB00AB0768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2020F5181DED62FB00AB0768 /* CitySelectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2020F51A1DED62FB00AB0768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2020F5231DED62FB00AB0768 /* CitySelectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2020F5151DED62FB00AB0768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2020F4F91DED62FB00AB0768 /* CitySelect */;
+			targetProxy = 2020F5141DED62FB00AB0768 /* PBXContainerItemProxy */;
+		};
+		2020F5201DED62FB00AB0768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2020F4F91DED62FB00AB0768 /* CitySelect */;
+			targetProxy = 2020F51F1DED62FB00AB0768 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2020F5061DED62FB00AB0768 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2020F5071DED62FB00AB0768 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2020F50B1DED62FB00AB0768 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2020F50C1DED62FB00AB0768 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2020F5251DED62FB00AB0768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2020F5261DED62FB00AB0768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2020F5281DED62FB00AB0768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CitySelect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.CitySelect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2020F5291DED62FB00AB0768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CitySelect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.CitySelect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2020F52B1DED62FB00AB0768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CitySelectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.CitySelectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitySelect.app/CitySelect";
+			};
+			name = Debug;
+		};
+		2020F52C1DED62FB00AB0768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CitySelectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.CitySelectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitySelect.app/CitySelect";
+			};
+			name = Release;
+		};
+		2020F52E1DED62FB00AB0768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CitySelectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.CitySelectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CitySelect;
+			};
+			name = Debug;
+		};
+		2020F52F1DED62FB00AB0768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CitySelectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.CitySelectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CitySelect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2020F4F51DED62FB00AB0768 /* Build configuration list for PBXProject "CitySelect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2020F5251DED62FB00AB0768 /* Debug */,
+				2020F5261DED62FB00AB0768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2020F5271DED62FB00AB0768 /* Build configuration list for PBXNativeTarget "CitySelect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2020F5281DED62FB00AB0768 /* Debug */,
+				2020F5291DED62FB00AB0768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2020F52A1DED62FB00AB0768 /* Build configuration list for PBXNativeTarget "CitySelectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2020F52B1DED62FB00AB0768 /* Debug */,
+				2020F52C1DED62FB00AB0768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2020F52D1DED62FB00AB0768 /* Build configuration list for PBXNativeTarget "CitySelectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2020F52E1DED62FB00AB0768 /* Debug */,
+				2020F52F1DED62FB00AB0768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2020F4F21DED62FB00AB0768 /* Project object */;
+}
