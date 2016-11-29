@@ -5,7 +5,7 @@
 ![Platform info](http://img.shields.io/cocoapods/p/YTKKeyValueStore.svg?style=flat)
 ## 实例
 
-![演示效果](http://7xt7mf.com1.z0.glb.clouddn.com/%E5%9F%8E%E5%B8%82%E9%80%89%E6%8B%A9.gif?imageMogr2/auto-orient/strip%7CimageView2/4/w/200)
+![演示效果](http://7xt7mf.com1.z0.glb.clouddn.com/%E5%9F%8E%E5%B8%82%E9%80%89%E6%8B%A9.gif?imageMogr2/auto-orient/strip%7CimageView2/4/w/400)
 
 ## 用法
 
