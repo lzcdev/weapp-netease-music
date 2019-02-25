@@ -20,6 +20,5 @@ CitySelectView *cityView = [[CitySelectView alloc]initWithFrame:CGRectMake(0, 10
     };
     [self.view addSubview:cityView];
 ```
-## 说明
-项目中用到的一个小功能，觉得有点用的请给个star。欢迎交流，qq:1185907688
+
 
