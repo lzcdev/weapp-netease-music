@@ -1,4 +1,4 @@
-const baseURL = 'https://shengwang.lujingkeji.com'
+const baseURL = 'http://netease.lzcdev.xyz'
 
 const http = ({
   url = '',
@@ -9,7 +9,7 @@ const http = ({
     title: '加载中...',
   })
   let time = Date.now()
-  console.log(`开始:${time}`)
+  // console.log(`开始:${time}`)
   return new Promise((resolve, reject) => {
     wx.request({
       url: getUrl(url),
@@ -18,7 +18,7 @@ const http = ({
       ...other,
       complete: (res) => {
         wx.hideLoading()
-        console.log(`耗时：${Date.now() - time}`)
+        // console.log(`耗时：${Date.now() - time}`)
         if (res.statusCode >= 200 && res.statusCode < 300) {
           resolve(res.data)
         } else {

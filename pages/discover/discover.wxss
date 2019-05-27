@@ -1,1 +1,18 @@
 /* pages/discover/discover.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper {
+  height: 300rpx;
+  width: 750rpx;
+}
+
+swiper-item image {
+  margin: 0 25rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}

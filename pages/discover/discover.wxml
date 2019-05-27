@@ -1,5 +1,17 @@
 <!--pages/discover/discover.wxml-->
 
-<view>
-发现
+<view class="container">
+
+
+  <view class='banner'>
+    <swiper class='swiper' indicator-dots="true" autoplay="false" indicator-color="#fff" indicator-active-color="#F2303C">
+      <block wx:for="{{banners}}" wx:key="{{item.targetId}}">
+        <swiper-item>
+          <image src="{{item.imageUrl}}" class="slide-image" style='width: 700rpx; height: 100%' />
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+
 </view>
