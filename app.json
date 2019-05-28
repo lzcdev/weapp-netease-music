@@ -5,7 +5,8 @@
     "pages/video/video",
     "pages/my/my",
     "pages/friend/friend",
-    "pages/account/account"
+    "pages/account/account",
+    "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "light",

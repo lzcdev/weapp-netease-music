@@ -16,3 +16,28 @@ swiper-item image {
   border-radius: 10rpx;
   overflow: hidden;
 }
+
+.recomend_body {
+  margin: 15rpx;
+}
+
+.recomend_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.personalized {
+  margin: 10rpx;
+  width: 220rpx;
+  height: 220rpx;
+  box-sizing: border-box;
+  border-radius: 6rpx;
+  position: relative;
+}
+.playCount {
+  position: absolute;
+  top: 5rpx;
+  right: 10rpx;
+  color: #fff;
+  font-size: 20rpx;
+}

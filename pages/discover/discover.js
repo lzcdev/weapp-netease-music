@@ -1,4 +1,6 @@
 const api = require('../../utils/api.js')
+const oneHundredMillion = 100000000
+const tenThousand = 10000
 
 Page({
 
@@ -6,12 +8,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
-    ],
-    banners: []
+    banners: [],
+    personalized: []
+
   },
 
 
@@ -20,21 +19,58 @@ Page({
    */
   onLoad: function(options) {
     this.getBannerData()
+    this.getRecommend()
   },
 
   getBannerData() {
-    var params = {}
-    api.get('/banner', params).then(res => {
+    api.get('/banner', {}).then(res => {
       console.log(res)
       if (res) {
         this.setData({
           banners: res.banners
         })
       }
+    })
 
+  },
+  getRecommend() {
+    api.get('/personalized', {}).then(res => {
+      console.log(res)
+      if (res) {
+
+        this.transfromPlayCount(res.result.slice(0, 6))
+        this.setData({
+          personalized: res.result.slice(0, 6)
+        })
+      }
     })
   },
-
+  /**
+   * 
+   */
+  bannerTap(event) {
+    console.log(event)
+    const url = event.currentTarget.dataset.banner.url
+    if (url) {
+      console.log(url)
+    } else {
+      console.log('不是一个url')
+    }
+  },
+  /**
+   * 转换播放量
+   */
+  transfromPlayCount(data) {
+    for (let i = 0; i < data.length; ++i) {
+      if (data[i].playCount > oneHundredMillion) {
+        data[i].playCount = (data[i].playCount / oneHundredMillion).toFixed(1) + '亿'
+      } else if (data[i].playCount > tenThousand) {
+        data[i].playCount = Math.round(data[i].playCount / tenThousand) + '万'
+      } else {
+        data[i].playCount = Math.round(data[i].playCount)
+      }
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

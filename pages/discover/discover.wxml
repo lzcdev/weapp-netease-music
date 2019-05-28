@@ -2,16 +2,31 @@
 
 <view class="container">
 
-
+  <!-- banner -->
   <view class='banner'>
-    <swiper class='swiper' indicator-dots="true" autoplay="false" indicator-color="#fff" indicator-active-color="#F2303C">
+    <swiper class='swiper' circular="true" indicator-dots="true" autoplay="false" indicator-color="#fff" indicator-active-color="#F2303C">
       <block wx:for="{{banners}}" wx:key="{{item.targetId}}">
-        <swiper-item>
+        <swiper-item data-banner="{{item}}" bindtap="bannerTap">
           <image src="{{item.imageUrl}}" class="slide-image" style='width: 700rpx; height: 100%' />
         </swiper-item>
       </block>
     </swiper>
 
   </view>
+
+  <!-- 推荐歌单 -->
+  <view class='recomend_body'>
+    <text class='recomend_title'>推荐歌单</text>
+    <view class='recomend_content'>
+      <block wx:for="{{personalized}}" wx:key="{{item.id}}">
+        <image class='personalized' src='{{item.picUrl}}'> <label class='playCount'>{{item.playCount}}</label>
+       </image>
+
+        <!-- <view class='personalized'>{{item.name}}</view> -->
+      </block>
+    </view>
+
+  </view>
+
 
 </view>
