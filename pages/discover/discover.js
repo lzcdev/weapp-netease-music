@@ -49,6 +49,30 @@ personalized: res.result
     })
   },
   /**
+   * 搜索框点击事件
+   */
+  goSearchCtrl() {
+    wx.navigateTo({
+      url: '../searchview/searchview',
+    })
+  },
+  /**
+   * 更多
+   */
+  more() {
+    console.log('更多')
+  },
+  /**
+   * 推荐歌单
+   */
+  goRecommendDetail(event) {
+    // console.log(event.currentTarget.dataset.detail)
+    var data = encodeURIComponent(JSON.stringify(event.currentTarget.dataset.detail));
+    wx.navigateTo({
+      url: `../recommend_song_list/recommend_song_list?data=${data}`
+    })
+  },
+  /**
    * banner点击事件
    */
   bannerTap(event) {

@@ -3,12 +3,14 @@
 <view class="container">
 
   <!-- 搜索框 -->
-  <!-- <view class='search_container'>
-    <input class='search' placeholder='请输入歌手或歌曲名'></input>
-  </view> -->
+  <view class='search_container'>
+  <image class='search_img' src='../../images/search.png'></image>
+    <input class='search' bindtap='goSearchCtrl' placeholder='请输入歌手或歌曲名'></input>
+  </view>
 
 
-  <view class='fixed'>fixed</view>
+  <!-- <view class='fixed'>fixed</view> -->
+
 
   <!-- banner -->
   <view class='banner'>
@@ -23,23 +25,29 @@
   </view>
 
   <!-- 推荐歌单 -->
-  <view class='recomend_body'>
-    <view class='recomend_header'>
-      <text class='recomend_title'>推荐歌单</text>
-      <text class='recomend_more'>更多</text>
+  <view class='recommend_body'>
+    <view class='recommend_header'>
+      <text class='recommend_title'>推荐歌单</text>
+      <view bindtap="more" class='recommend_more'>
+        <text class=''>更多</text>
+        <image class='arrow_right' src='../../images/arrow_right.png'></image>
+      </view>
     </view>
 
-    <view class='recomend_content'>
+    <view class='recommend_content'>
       <block wx:for="{{personalized}}" wx:key="{{item.id}}">
-        <image class='personalized' src='{{item.picUrl}}'>
-          <label class='playCount'>{{item.playCount}}</label>
-        </image>
-
-        <!-- <view class='personalized'>{{item.name}}</view> -->
+        <view data-detail="{{item}}" bindtap="goRecommendDetail">
+          <image class='personalized' src='{{item.picUrl}}'>
+            <label class='playCount'>{{item.playCount}}</label>
+          </image>
+          <text class='recommend_name'>{{item.name}}</text>
+        </view>
       </block>
     </view>
 
+
   </view>
+
 
 
 </view>
