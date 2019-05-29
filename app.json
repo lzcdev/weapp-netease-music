@@ -6,7 +6,9 @@
     "pages/my/my",
     "pages/friend/friend",
     "pages/account/account",
-    "pages/webview/webview"
+    "pages/webview/webview",
+    "pages/searchview/searchview",
+    "pages/recommend_song_list/recommend_song_list"
   ],
   "window": {
     "backgroundTextStyle": "light",
