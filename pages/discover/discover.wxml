@@ -2,6 +2,14 @@
 
 <view class="container">
 
+  <!-- 搜索框 -->
+  <!-- <view class='search_container'>
+    <input class='search' placeholder='请输入歌手或歌曲名'></input>
+  </view> -->
+
+
+  <view class='fixed'>fixed</view>
+
   <!-- banner -->
   <view class='banner'>
     <swiper class='swiper' circular="true" indicator-dots="true" autoplay="false" indicator-color="#fff" indicator-active-color="#F2303C">
@@ -16,11 +24,16 @@
 
   <!-- 推荐歌单 -->
   <view class='recomend_body'>
-    <text class='recomend_title'>推荐歌单</text>
+    <view class='recomend_header'>
+      <text class='recomend_title'>推荐歌单</text>
+      <text class='recomend_more'>更多</text>
+    </view>
+
     <view class='recomend_content'>
       <block wx:for="{{personalized}}" wx:key="{{item.id}}">
-        <image class='personalized' src='{{item.picUrl}}'> <label class='playCount'>{{item.playCount}}</label>
-       </image>
+        <image class='personalized' src='{{item.picUrl}}'>
+          <label class='playCount'>{{item.playCount}}</label>
+        </image>
 
         <!-- <view class='personalized'>{{item.name}}</view> -->
       </block>

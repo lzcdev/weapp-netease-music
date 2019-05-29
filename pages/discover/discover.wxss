@@ -6,6 +6,27 @@
   align-items: center;
 }
 
+.fixed {
+  height: 200rpx;
+  width: 100%;
+  background: gold;
+  position: fixed;
+}
+
+.banner {
+  margin-top: 200rpx;
+}
+
+.search {
+  /* border: 1rpx solid black; */
+  background-color: #F5F5F5;
+  font-size: 30rpx;
+  width: 90%;
+  border-radius: 14rpx;
+  text-align: center;
+  /* position: fixed; */
+}
+
 .swiper {
   height: 300rpx;
   width: 750rpx;
@@ -19,8 +40,23 @@ swiper-item image {
 
 .recomend_body {
   margin: 15rpx;
+
 }
 
+.recomend_header {
+  display: flex;
+  background: forestgreen;
+
+}
+
+.recomend_title {
+  background: firebrick;
+ 
+}
+
+.recomend_more {
+  
+}
 .recomend_content {
   display: flex;
   flex-wrap: wrap;

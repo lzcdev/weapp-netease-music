@@ -40,13 +40,16 @@ Page({
 
         this.transfromPlayCount(res.result.slice(0, 6))
         this.setData({
-          personalized: res.result.slice(0, 6)
+          // personalized: res.result.slice(0, 6)
+personalized: res.result
+
+
         })
       }
     })
   },
   /**
-   * 
+   * banner点击事件
    */
   bannerTap(event) {
     console.log(event)
