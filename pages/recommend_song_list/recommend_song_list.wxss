@@ -1,1 +1,56 @@
-/* pages/recommend_song_list/recommend_song_list.wxss */
+
+
+.header {
+  width: 100%;
+  height: 360rpx;
+  position: relative;
+}
+.headerBg {
+  width: 100%;
+  height: 100%;
+  /* background-repeat: no-repeat; */
+  /* background-size: 100%; */
+}
+
+
+
+.song_list {
+  position: absolute;
+  top: 320rpx;
+  background: #fff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  
+}
+
+.list {
+  padding: 20rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.songlist_img {
+  width: 120rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.index {
+  color: #AAAAAA;
+  font-size: 24rpx;
+  margin-left: 40rpx;
+}
+.name {
+  font-size: 28rpx;
+  margin-left: 40rpx;
+}
+
+.playBtn {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.more {
+  width: 32rpx;
+  height: 32rpx;
+}

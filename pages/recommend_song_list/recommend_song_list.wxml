@@ -1,2 +1,33 @@
-<!--pages/recommend_song_list/recommend_song_list.wxml-->
-<text>pages/recommend_song_list/recommend_song_list.wxml</text>
+<view class='container'>
+  <!-- 顶部 -->
+  <view class='header'>
+  
+    <view class="headerBg" style="background: url('http://p1.music.126.net/NIb2W3Uuv376EQugKMOc0A==/109951164103298626.jpg') no-repeat;"></view>
+    <view>哈哈哈</view>
+  
+  </view>
+
+
+  <!-- 歌单部分 -->
+  <view class='song_list'>
+    <view>
+    </view>
+
+    <block wx:for="{{playlist.tracks}}" wx:key="{{index}}">
+      <view class='list'>
+
+        <view>
+          <text class='index'>{{index}}</text>
+          <text class='name'>{{item.name}}</text>
+        </view>
+
+        <view class='songlist_img'>
+          <image class='playBtn' src='../../images/playBtn.png'></image>
+          <image class='more' src='../../images/threedot.png'></image>
+        </view>
+
+      </view>
+    </block>
+
+  </view>
+</view>

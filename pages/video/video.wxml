@@ -1,2 +1,9 @@
-<!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<view>
+  <image src='http://p1.music.126.net/NIb2W3Uuv376EQugKMOc0A==/109951164103298626.jpg'></image>
+
+
+
+
+  <view class='test'></view>
+
+</view>

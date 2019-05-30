@@ -1,1 +1,7 @@
-/* pages/video/video.wxss */
+.test {
+  margin-top: 200rpx;
+  width: 500rpx;
+  height: 200rpx;
+  background: url('http://p1.music.126.net/NIb2W3Uuv376EQugKMOc0A==/109951164103298626.jpg') no-repeat;
+  background-size: 100%;
+}
