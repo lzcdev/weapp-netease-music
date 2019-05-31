@@ -1,4 +1,4 @@
-## 小程序版本网易云音乐
+# 小程序版本网易云音乐
 
 * [使用](#使用)
 * [API](#API)
@@ -34,8 +34,8 @@ API 为网易云音乐，页面样式参照网易云音乐APP 6.2.0 版本和酷
 ##### 路径
 pages/discover
 ##### API
-[banner](https://net/NeteaseCloudMusicApi/#/?id=banner)
-[推荐歌单](https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=%E6%8E%A8%E8%8D%90%E6%AD%8C%E5%8D%95)
+* [banner](https://net/NeteaseCloudMusicApi/#/?id=banner)
+* [推荐歌单](https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=%E6%8E%A8%E8%8D%90%E6%AD%8C%E5%8D%95)
 
 
 
