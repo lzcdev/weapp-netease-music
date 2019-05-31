@@ -4,6 +4,8 @@
 * [API](#API)
 * [项目简介](#项目简介)
 * [项目详情](#项目详情)
+    * [首页](###首页)
+    * [推荐歌单详情](###推荐歌单详情)
 
 # 使用
 直接小程序打开项目，填上自己的 AppID，并配置后台域名 [http://netease.lzcdev.xyz](http://netease.lzcdev.xyz)，暂时不支持 https，可用开发者工具查看效果
@@ -34,9 +36,10 @@ API 为网易云音乐，页面样式参照网易云音乐APP 6.2.0 版本和酷
 ##### 路径
 pages/discover
 ##### API
-* [banner](https://net/NeteaseCloudMusicApi/#/?id=banner)
+* [banner](https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=banner)
 * [推荐歌单](https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=%E6%8E%A8%E8%8D%90%E6%AD%8C%E5%8D%95)
 
+### 推荐歌单详情
 
 
 
