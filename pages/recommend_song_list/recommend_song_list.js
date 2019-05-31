@@ -21,6 +21,16 @@ Page({
     this.getPlayListDetail()
   },
   /**
+   * 播放
+   */
+  play(e) {
+    console.log(e.currentTarget.dataset.id)
+    wx.navigateTo({
+      url: `../play/play?id=${e.currentTarget.dataset.id}`,
+    })
+
+  },
+  /**
    * 根据id获取歌单详情
    */
   getPlayListDetail() {

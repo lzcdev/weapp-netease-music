@@ -1,10 +1,34 @@
 <view class='container'>
   <!-- 顶部 -->
   <view class='header'>
-  
-    <view class="headerBg" style="background: url('http://p1.music.126.net/NIb2W3Uuv376EQugKMOc0A==/109951164103298626.jpg') no-repeat;"></view>
-    <view>哈哈哈</view>
-  
+    <view class="headerBg">
+      <view class='header_msg'>
+        <view class="coverImg" style="background: url('{{playlist.coverImgUrl}}') no-repeat; background-size: 100%;">
+          <view class='playCount'>{{playlist.playCount}}</view>
+        </view>
+
+        <view class='creator'>
+          <view class='creator_name'>{{playlist.name}}</view>
+          <image class='avatarUrl' src='{{playlist.creator.avatarUrl}}'></image>
+        </view>
+      </view>
+
+    </view>
+    <!-- <view class="headerBg" style="background: url('{{playlist.coverImgUrl}}') no-repeat; background-size: 100% 100%;">
+      <view class='header_msg'>
+        <image class='personalized' src='{{playlist.coverImgUrl}}'>
+          <label class='playCount'>{{playlist.playCount}}</label>
+        </image>
+        <view>
+          <view>{{playlist.name}}</view>
+          <image>{{playlist.creator.avatarUrl}}</image>
+          <view>{{playlist.name}}</view>
+        </view>
+      </view>
+    </view> -->
+
+
+    <!-- <view class="headerBg"></view> -->
   </view>
 
 
@@ -14,13 +38,11 @@
     </view>
 
     <block wx:for="{{playlist.tracks}}" wx:key="{{index}}">
-      <view class='list'>
-
+      <view class='list' data-id="{{item.id}}" bindtap='play'>
         <view>
-          <text class='index'>{{index}}</text>
+          <text class='index'>{{index + 1}}</text>
           <text class='name'>{{item.name}}</text>
         </view>
-
         <view class='songlist_img'>
           <image class='playBtn' src='../../images/playBtn.png'></image>
           <image class='more' src='../../images/threedot.png'></image>
