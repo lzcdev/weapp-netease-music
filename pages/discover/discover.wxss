@@ -33,6 +33,7 @@
   text-align: center;
   height: 34rpx;
   line-height: 34rpx;
+  padding: 10rpx 0;
 }
 
 .banner {

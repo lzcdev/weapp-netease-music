@@ -9,26 +9,13 @@
 
         <view class='creator'>
           <view class='creator_name'>{{playlist.name}}</view>
+          <!-- <view>ff</view> -->
           <image class='avatarUrl' src='{{playlist.creator.avatarUrl}}'></image>
         </view>
       </view>
 
     </view>
-    <!-- <view class="headerBg" style="background: url('{{playlist.coverImgUrl}}') no-repeat; background-size: 100% 100%;">
-      <view class='header_msg'>
-        <image class='personalized' src='{{playlist.coverImgUrl}}'>
-          <label class='playCount'>{{playlist.playCount}}</label>
-        </image>
-        <view>
-          <view>{{playlist.name}}</view>
-          <image>{{playlist.creator.avatarUrl}}</image>
-          <view>{{playlist.name}}</view>
-        </view>
-      </view>
-    </view> -->
 
-
-    <!-- <view class="headerBg"></view> -->
   </view>
 
 

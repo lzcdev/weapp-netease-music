@@ -3,5 +3,24 @@
   width: 500rpx;
   height: 200rpx;
   background: url('http://p1.music.126.net/NIb2W3Uuv376EQugKMOc0A==/109951164103298626.jpg') no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
+}
+
+.coverImg {
+  width: 220rpx;
+  height: 220rpx;
+  box-sizing: border-box;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  border-radius: 10rpx;
+}
+.headerBg {
+  width: 100%;
+  height: 500rpx;
+  background: gainsboro;
+}
+.header_msg {
+  display: flex;
+  background: forestgreen;
+  height: 500rpx;
 }

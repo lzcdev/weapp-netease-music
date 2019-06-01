@@ -1,7 +1,6 @@
-// pages/video/video.js
-const url = 'http://m10.music.126.net/20190530122322/1b63dbd89ceaf76451268f0f0c8c4ac3/ymusic/7a0a/0e2f/87ac/92a20ea5c429bb61e61bc5bc23f1f4c6.mp3'
+// pages/play/play.js
+const api = require('../../utils/api.js')
 
-const innerAudioContext = wx.createInnerAudioContext()
 
 Page({
 
@@ -9,41 +8,46 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isPlaying: false
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    this.configAudio()
+    this.id = options.id
+    console.log(this.id)
+
+    this.getSongUrl()
   },
 
   /**
-   * 音频初始化
+   * 根据id获取歌曲url
    */
-  configAudio() {
-    innerAudioContext.src = url
-    // innerAudioContext.autoplay = true
-    innerAudioContext.onPlay(() => {
-      console.log('开始播放')
-    })
-    innerAudioContext.onError((res) => {
-      console.log(res.errMsg)
-      console.log(res.errCode)
-    })
+  getSongUrl() {
+    api.get('/song/url', {
+      id: this.id
+    }).then(res => {
+      console.log(res)
+      if (res) {
+        const url =  res.data[0].url
 
-  },
-  /**
-   * 开始或暂停按钮
-   */
-  startOrStop() {
-    if (this.data.isPlaying) {
-      innerAudioContext.pause()
-    } else {
-      innerAudioContext.play()
-    }
-    this.data.isPlaying = !this.data.isPlaying
+        const innerAudioContext = wx.createInnerAudioContext()
+        innerAudioContext.autoplay = true
+        innerAudioContext.src = url
+        innerAudioContext.onPlay(() => {
+          console.log('开始播放')
+        })
+        innerAudioContext.onError((res) => {
+          console.log(res.errMsg)
+          console.log(res.errCode)
+        })
+
+        // this.setData({
+        //   playlist: res.playlist
+        // })
+      }
+    })
 
   },
   /**

@@ -8,7 +8,8 @@
     "pages/account/account",
     "pages/webview/webview",
     "pages/searchview/searchview",
-    "pages/recommend_song_list/recommend_song_list"
+    "pages/recommend_song_list/recommend_song_list",
+    "pages/play/play"
   ],
   "window": {
     "backgroundTextStyle": "light",

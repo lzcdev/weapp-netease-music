@@ -1,9 +1,12 @@
 <view>
-  <image src='http://p1.music.126.net/NIb2W3Uuv376EQugKMOc0A==/109951164103298626.jpg'></image>
 
+  <slider></slider>
+  <button bindtap='startOrStop'>开始或者暂停</button>
 
-
-
-  <view class='test'></view>
-
+  <view class="headerBg">
+    <view class='header_msg'>
+      <view class="coverImg" style="background: url('http://p2.music.126.net/asVjKxvWXF3Sb6LN74Lr1A==/109951164105796744.jpg') no-repeat; background-size: 100%;">
+      </view>
+    </view>
+  </view>
 </view>

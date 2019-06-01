@@ -80,6 +80,10 @@ personalized: res.result
     const url = event.currentTarget.dataset.banner.url
     if (url) {
       console.log(url)
+      wx.showModal({
+        title: '这是一个网页',
+        content: '个人开发者账号不支持webview',
+      })
     } else {
       console.log('不是一个url')
     }
