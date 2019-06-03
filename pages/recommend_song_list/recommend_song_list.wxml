@@ -1,17 +1,23 @@
 <view class='container'>
   <!-- 顶部 -->
   <view class='header'>
-    <view class="headerBg">
+    <view class="headerBg" style="background: url('{{playlist.coverImgUrl}}') no-repeat; background-size: cover;">
       <view class='header_msg'>
-        <view class="coverImg" style="background: url('{{playlist.coverImgUrl}}') no-repeat; background-size: 100%;">
-          <view class='playCount'>{{playlist.playCount}}</view>
+
+        <view class="coverImg" style="background: url('{{playlist.coverImgUrl}}') no-repeat; background-size: cover;">
+          <view class='playCount'>{{playCount}}</view>
         </view>
 
         <view class='creator'>
-          <view class='creator_name'>{{playlist.name}}</view>
-          <!-- <view>ff</view> -->
-          <image class='avatarUrl' src='{{playlist.creator.avatarUrl}}'></image>
+          <view class='creator_title'>{{playlist.name}}</view>
+          <view class='creator_name_detail'>
+            <image class='avatarUrl' src='{{playlist.creator.avatarUrl}}'></image>
+            <view class='creator_name'>{{playlist.creator.nickname}}</view>
+          </view>
+
         </view>
+
+
       </view>
 
     </view>
@@ -26,15 +32,12 @@
 
     <block wx:for="{{playlist.tracks}}" wx:key="{{index}}">
       <view class='list' data-id="{{item.id}}" bindtap='play'>
-        <view>
-          <text class='index'>{{index + 1}}</text>
-          <text class='name'>{{item.name}}</text>
-        </view>
+        <text class='index'>{{index + 1}}</text>
+        <text class='name'>{{item.name}}</text>
         <view class='songlist_img'>
           <image class='playBtn' src='../../images/playBtn.png'></image>
           <image class='more' src='../../images/threedot.png'></image>
         </view>
-
       </view>
     </block>
 

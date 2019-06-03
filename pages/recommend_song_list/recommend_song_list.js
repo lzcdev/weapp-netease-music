@@ -1,5 +1,6 @@
 const api = require('../../utils/api.js')
-
+const oneHundredMillion = 100000000
+const tenThousand = 10000
 
 Page({
 
@@ -7,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    playCount: '',
     playlist: {}
   },
 
@@ -15,6 +17,7 @@ Page({
    */
   onLoad: function(options) {
     this.data = JSON.parse(decodeURIComponent(options.data))
+
     // console.log(data)
 
 
@@ -40,6 +43,7 @@ Page({
       console.log(res)
       if (res) {
         this.setData({
+          playCount: this.transfromPlayCount(res.playlist.playCount),
           playlist: res.playlist
         })
       }
@@ -47,6 +51,21 @@ Page({
 
   },
 
+  /**
+   * 转换播放量
+   */
+  transfromPlayCount(playCount) {
+    console.log(playCount)
+    if (playCount > oneHundredMillion) {
+      playCount = (playCount / oneHundredMillion).toFixed(1) + '亿'
+    } else if (playCount > tenThousand) {
+      playCount = Math.round(playCount / tenThousand) + '万'
+    } else {
+      playCount = Math.round(playCount)
+    }
+    return playCount
+
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
