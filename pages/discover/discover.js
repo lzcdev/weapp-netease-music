@@ -37,12 +37,10 @@ Page({
     api.get('/personalized', {}).then(res => {
       console.log(res)
       if (res) {
-
         this.transfromPlayCount(res.result.slice(0, 6))
         this.setData({
           // personalized: res.result.slice(0, 6)
 personalized: res.result
-
 
         })
       }
