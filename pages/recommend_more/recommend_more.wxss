@@ -1,0 +1,33 @@
+.recommend_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.personalized {
+  margin: 10rpx 15rpx;
+  width: 345rpx;
+  height: 345rpx;
+  box-sizing: border-box;
+  border-radius: 6rpx;
+  position: relative;
+}
+
+.playCount {
+  position: absolute;
+  top: 5rpx;
+  right: 10rpx;
+  color: #fff;
+  font-size: 20rpx;
+}
+
+.recommend_name {
+  font-size: 24rpx;
+  width: 345rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}

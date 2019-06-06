@@ -1,0 +1,12 @@
+<view>
+  <view class='recommend_content'>
+    <block wx:for="{{personalized}}" wx:key="{{item.id}}">
+      <view data-detail="{{item}}" bindtap="goRecommendDetail">
+        <image class='personalized' src='{{item.picUrl}}'>
+          <label class='playCount'>{{item.playCount}}</label>
+        </image>
+        <text class='recommend_name'>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

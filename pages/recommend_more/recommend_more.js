@@ -8,60 +8,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    banners: [],
-    personalized: []
-
+    personalized: {}
   },
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    this.getBannerData()
     this.getRecommend()
-  },
-
-  getBannerData() {
-    api.get('/banner', {}).then(res => {
-      console.log(res)
-      if (res) {
-        this.setData({
-          banners: res.banners
-        })
-      }
-    })
-
-  },
-  getRecommend() {
-    api.get('/personalized', {}).then(res => {
-      console.log(res)
-      if (res) {
-        this.transfromPlayCount(res.result.slice(0, 6))
-        this.setData({
-          personalized: res.result.slice(0, 6)
-          // personalized: res.result
-
-        })
-      }
-    })
-  },
-  /**
-   * 搜索框点击事件
-   */
-  goSearchCtrl() {
-    wx.navigateTo({
-      url: '../searchview/searchview',
-    })
-  },
-  /**
-   * 更多
-   */
-  more() {
-    console.log('更多')
-    wx.navigateTo({
-      url: '../recommend_more/recommend_more'
-    })
   },
   /**
    * 推荐歌单
@@ -73,26 +27,22 @@ Page({
       url: `../recommend_song_list/recommend_song_list?data=${data}`
     })
   },
-  /**
-   * banner点击事件
-   */
-  bannerTap(event) {
-    console.log(event)
-    const url = event.currentTarget.dataset.banner.url
-    if (url) {
-      console.log(url)
-      wx.showModal({
-        title: '这是一个网页',
-        content: '目前只有企业账号支持webview,并且需要后台配置业务域名',
-      })
-  
-    } else {
-      console.log('不是一个url')
-    }
+  getRecommend() {
+    api.get('/personalized', {}).then(res => {
+      console.log(res)
+      if (res) {
+        this.transfromPlayCount(res.result)
+        this.setData({
+          // personalized: res.result.slice(0, 6)
+          personalized: res.result
+
+        })
+      }
+    })
   },
   /**
-   * 转换播放量
-   */
+ * 转换播放量
+ */
   transfromPlayCount(data) {
     for (let i = 0; i < data.length; ++i) {
       if (data[i].playCount > oneHundredMillion) {
