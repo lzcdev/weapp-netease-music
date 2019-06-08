@@ -50,8 +50,20 @@ Page({
    * 搜索框点击事件
    */
   goSearchCtrl() {
+    var obj = {
+      activeUserId: 146123384,
+      roomNo: "b8a0ecc1a476497c9bb1025b79516b55",
+      videoUserList: [
+        { userId: 585425476, streamId: null, mobile: "13505695986", name: "当事人1", type: "2" },
+        { userId: 585425476, streamId: null, mobile: "13505695986", name: "当事人1", type: "2" },
+        { userId: 585425476, streamId: null, mobile: "13505695986", name: ".,==当事人1====", type: "2" },
+
+      ]
+    }
+
+    // return;
     wx.navigateTo({
-      url: '../searchview/searchview',
+      url: `../searchview/searchview?data=${encodeURIComponent(JSON.stringify(obj))}`,
     })
   },
   /**

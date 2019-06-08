@@ -1,2 +1,5 @@
-<!--pages/webview/webview.wxml-->
-<web-view></web-view>
+<!-- <web-view src="https://music.163.com/store/newalbum/detail?id=79464266"></web-view> -->
+
+
+<web-view src="{{url}}"></web-view>
+

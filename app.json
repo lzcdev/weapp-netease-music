@@ -9,7 +9,8 @@
     "pages/webview/webview",
     "pages/searchview/searchview",
     "pages/recommend_song_list/recommend_song_list",
-    "pages/play/play"
+    "pages/play/play",
+    "pages/recommend_more/recommend_more"
   ],
   "window": {
     "backgroundTextStyle": "light",

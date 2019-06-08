@@ -9,4 +9,12 @@
       </view>
     </view>
   </view>
+
+
+
+  <view class="mainHolder">
+      <view class="textHolder">
+        <p>this is FrostedGlass</p>
+      </view>
+    </view>
 </view>

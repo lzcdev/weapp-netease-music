@@ -13,8 +13,10 @@
   margin-top: 40rpx;
   margin-left: 40rpx;
   border-radius: 10rpx;
+  z-index: 10;
+  position: relative;
 }
-.headerBg {
+/* .headerBg {
   width: 100%;
   height: 500rpx;
   background: gainsboro;
@@ -23,4 +25,48 @@
   display: flex;
   background: forestgreen;
   height: 500rpx;
+} */
+.headerBg {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/skyscrapers.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header_msg {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  overflow: hidden;
+}
+.header_msg::before {
+  content: '';
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  background-attachment: fixed;
+  filter: blur(2px);
+}
+.header_msg::after {
+  content: "";
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+}
+p {
+  z-index: 1;
+  color: white;
+  position: relative;
+  margin: 0;
 }
