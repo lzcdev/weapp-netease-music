@@ -8,13 +8,13 @@
     * [推荐歌单详情](#推荐歌单详情)
 
 # 使用
-直接小程序打开项目，填上自己的 AppID，并配置后台域名 [http://netease.lzcdev.xyz](https://netease.lzcdev.xyz)
+直接小程序打开项目，填上自己的 AppID，并配置后台域名 [https://netease.lzcdev.xyz](https://netease.lzcdev.xyz)
 
 # API
 
 API 来自 [NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
-我把这个项目部署到自己服务器上了，配置的域名为 [http://netease.lzcdev.xyz/](http://netease.lzcdev.xyz/)，如果你条件允许，我希望你自己部署一套接口😂
+我把这个项目部署到自己服务器上了，配置的域名为 [https://netease.lzcdev.xyz/](https://netease.lzcdev.xyz/)，如果你条件允许，我希望你自己部署一套接口😂
 
 # 项目简介
 
