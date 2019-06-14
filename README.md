@@ -8,7 +8,7 @@
     * [推荐歌单详情](#推荐歌单详情)
 
 # 使用
-直接小程序打开项目，填上自己的 AppID，并配置后台域名 [http://netease.lzcdev.xyz](http://netease.lzcdev.xyz)，暂时不支持 https，可用开发者工具查看效果
+直接小程序打开项目，填上自己的 AppID，并配置后台域名 [http://netease.lzcdev.xyz](https://netease.lzcdev.xyz)
 
 # API
 
